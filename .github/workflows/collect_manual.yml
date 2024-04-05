@@ -1,0 +1,13 @@
+name: collect-weather-data-manual
+jobs:
+  run_python_program:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.7.16'
+      - name: Install python packages
+        run: pip install requests
+      - name: Run app
+        run: python -m oteme.app
