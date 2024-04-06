@@ -18,3 +18,5 @@ jobs:
         run: pip install requests
       - name: Run app
         run: python -m oteme.app
+      - name: Commit changes
+        run: git add . && git commit -m "Edit collect file" && git push origin
