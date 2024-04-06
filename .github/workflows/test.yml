@@ -5,6 +5,8 @@ jobs:
   run_python_program:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
       - name: Set up python
         uses: actions/setup-python@v4
         with:
@@ -12,5 +14,5 @@ jobs:
       - name: Install python packages
         run: pip install requests
       - name: List and show directories
-        run: cd && ls
+        run: ls
 
