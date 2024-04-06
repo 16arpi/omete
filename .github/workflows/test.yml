@@ -12,5 +12,5 @@ jobs:
       - name: Install python packages
         run: pip install requests
       - name: List and show directories
-        run: ls && echo "$PWD"
+        run: ls
 
